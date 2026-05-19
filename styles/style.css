@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: grid;
+  align-content: center;
+  justify-items: stretch;
 }
 
 h1,
@@ -60,38 +63,6 @@ ol {
   white-space: nowrap;
 }
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-  display: grid;
-  align-content: center;
-  justify-items: stretch;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
 .content {
   padding: 133px 30px;
   display: flex;
@@ -118,7 +89,6 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 394px;
   padding: 2px;
   color: #FFF;
 }
@@ -224,11 +194,11 @@ ol {
 }
 
 .button:focus {
-  outline: none; 
+  outline: none;
 }
 
 .button:focus-visible {
-  outline: 1px solid #FFF; 
+  outline: 1px solid #FFF;
   outline-offset: 2px;
 }
 
@@ -285,7 +255,7 @@ fieldset {
   outline: none;
 }
 
-.search-form__label:hover .search-form__label-text { 
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -307,7 +277,7 @@ fieldset {
 }
 
 .search-form__textfield:focus {
-  outline: none;  
+  outline: none;
 }
 
 .search-form__textfield:focus-visible {
@@ -359,7 +329,7 @@ fieldset {
 }
 
 .result__video .preloader, .content__list .preloader {
-  content: ''; 
+  content: '';
   position: relative;
   width: inherit;
   height: inherit;
