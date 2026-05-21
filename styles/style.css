@@ -78,9 +78,9 @@ ol {
   position: relative;
 }
 
-.result__video {
-  width: 100%;
-  height: 100%;
+video {
+  object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card {
@@ -117,7 +117,7 @@ ol {
 
 .title {
   margin-bottom: 26px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -127,7 +127,7 @@ ol {
   color: #545050;
 }
 
-.content__list {
+.content__list-container {
   height: 298px;
   overflow: auto;
   width: 100%;
@@ -148,7 +148,7 @@ ol {
 
 .search-form__fieldset {
   color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -185,7 +185,7 @@ ol {
   align-items: center;
   gap: 10px;
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   background-color: inherit;
@@ -217,8 +217,12 @@ ol {
 }
 
 .content__video-card-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
@@ -226,9 +230,14 @@ ol {
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
   height: auto;
   color: inherit;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   line-height: 90%;
 }
@@ -266,8 +275,8 @@ fieldset {
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
   background-color: inherit;
-  color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   text-decoration: none;
 }
@@ -304,7 +313,7 @@ fieldset {
 
 .content__video-card:hover {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 90%;
