@@ -78,13 +78,16 @@ ol {
   position: relative;
 }
 
-video {
+.result__video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .content__video-card {
-  width: auto;
+  width: 390px;
+  height: 103px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -110,7 +113,7 @@ video {
 }
 
 .content__details {
-  height: 100%;
+  height: 534px;
   display: flex;
   flex-direction: column;
 }
@@ -128,9 +131,14 @@ video {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 300px;
 }
 
 .content__list-item {
@@ -250,6 +258,7 @@ fieldset {
 .search-form__label {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: fit-content;
   color: #FFF;
   cursor: pointer;
